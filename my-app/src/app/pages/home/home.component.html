@@ -1,0 +1,24 @@
+<div class="pokemon-app">
+  <header>
+    <nav>
+      <button routerLink="/home">Página 1</button>
+      <button routerLink="/pagina2">Página 2</button>
+      <button routerLink="/paginaAdmin">Página Admin</button>
+      <button (click)="signOut()">Cerrar Sesión</button>
+    </nav>
+  </header>
+
+
+  <div style="text-align: center; margin-bottom: 20px;">
+    <button (click)="fetchRandomPokemonData()">Mostrar nuevos</button>
+  </div>
+
+  <main>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Buscar Pokémon por ID" 
+             [value]="searchTerm" (input)="onSearchInput($event)">
+      <button (click)="searchPokemon()">Buscar</button>
+    </div>
+    <div class="pokemon-grid"></div>
+  </main>
+</div>

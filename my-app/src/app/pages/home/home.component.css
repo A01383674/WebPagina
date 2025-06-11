@@ -1,0 +1,80 @@
+.pokemon-app {
+  font-family: sans-serif;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #1e2024;
+}
+
+header nav button {
+  padding: 8px 16px;
+  background-color: #03113d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+header nav button:hover {
+  background-color: #010b2c;
+}
+
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.pokemon-info {
+  background: #2c2f33;
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+}
+
+.pokemon-info h2 {
+  text-transform: capitalize;
+  margin-top: 0;
+}
+
+.pokemon-info img {
+  width: 100%;
+  height: auto;
+  background: #1e2024;
+  border-radius: 4px;
+}
+
+.stats p {
+  margin: 5px 0;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.search-bar input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.search-bar button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #45a049;
+}

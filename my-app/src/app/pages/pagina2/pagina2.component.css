@@ -1,0 +1,39 @@
+.pagina-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header {
+  background: #052d7b;
+  padding: 10px 20px;
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  background: #7a7a8f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background: #5a5a6f;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #ffffffdd;
+}
