@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit {
   searchTerm: string = '';
 
   constructor(private router: Router) {}
-
+  pokemons: any[] = [];
   ngOnInit(): void {
     const isLoggedIn = localStorage.getItem('isLoggedIn');
     if (!isLoggedIn || isLoggedIn !== 'true') {
@@ -18,8 +18,7 @@ export class HomeComponent implements OnInit {
     } else {
       this.fetchRandomPokemonData();
     }
-
-    console.log('HomeComponent iniciando...');
+    this.fetchRandomPokemonData()
   const user = localStorage.getItem('currentUser');
   console.log('Usuario en localStorage:', user);
   
@@ -91,6 +90,7 @@ export class HomeComponent implements OnInit {
     pokemonInfo.appendChild(abilities);
     pokemonInfo.appendChild(statsSection);
     main.appendChild(pokemonInfo);
+    this.pokemons = [...this.pokemons, pokemon];
   }
 
   signOut(): void {
